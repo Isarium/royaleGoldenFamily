@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { APP_BOOTSTRAP_LISTENER, NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +13,7 @@ import { RoyaleListPersoComponent } from './royale-list-perso/royale-list-perso.
 import { AddPersonnageComponent } from './add-personnage/add-personnage.component';
 import { DeleteUpdatePersonnageComponent } from './delete-update-personnage/delete-update-personnage.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { DeleteUpdatePersonnageComponent } from './delete-update-personnage/dele
     ListPersoComponent,
     RoyaleListPersoComponent,
     AddPersonnageComponent,
-    DeleteUpdatePersonnageComponent
+    DeleteUpdatePersonnageComponent,
+    
   ],
   imports: [
     BrowserModule,
