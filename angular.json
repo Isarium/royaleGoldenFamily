@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "RoyaleGoldenFamily"
+    }
+  },
+  "defaultProject": "RoyaleGoldenFamily",
+  "cli": {
+    "analytics": "b2817e40-8a56-4ef0-9ca5-c2c0f24fe2fa"
+  }
 }
