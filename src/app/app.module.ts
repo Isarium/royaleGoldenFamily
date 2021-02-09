@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { APP_BOOTSTRAP_LISTENER, NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +10,9 @@ import { ContactComponent } from './contact/contact.component';
 import { AdminComponent } from './admin/admin.component';
 import { ListPersoComponent } from './list-perso/list-perso.component';
 import { RoyaleListPersoComponent } from './royale-list-perso/royale-list-perso.component';
+import { AddPersonnageComponent } from './add-personnage/add-personnage.component';
+import { DeleteUpdatePersonnageComponent } from './delete-update-personnage/delete-update-personnage.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { RoyaleListPersoComponent } from './royale-list-perso/royale-list-perso.
     ContactComponent,
     AdminComponent,
     ListPersoComponent,
-    RoyaleListPersoComponent
+    RoyaleListPersoComponent,
+    AddPersonnageComponent,
+    DeleteUpdatePersonnageComponent,
+    
   ],
   imports: [
     BrowserModule,
