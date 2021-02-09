@@ -13,10 +13,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.royaleGoldenFamily.checkpoint4wcs.entities.Role;
-import com.royaleGoldenFamily.checkpoint4wcs.repositories.RoleRepository;
 import com.royaleGoldenFamily.checkpoint4wcs.services.RoleService;
 
-@CrossOrigin(origins = "*", maxAge = 3600)
+@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
 @RestController
 public class RoleController {
 	
@@ -37,7 +36,7 @@ public class RoleController {
 	@PutMapping("/role/{id}")
 	public ResponseEntity<Role> updateRole(@RequestBody Role role) {
 		Role roleToUpdate = roleService.updateRole(role);
-		return ResponseEntity.ok().body(role);
+		return ResponseEntity.ok().body(roleToUpdate);
 	}
 	
 	@DeleteMapping("/role/{id}")
