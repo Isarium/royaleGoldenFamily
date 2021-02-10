@@ -7,7 +7,7 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-contactFomr = this.fb.group({
+contactForm = this.fb.group({
   firstname:[''],
   lastname:[''],
   mail:[''],
@@ -20,4 +20,7 @@ contactFomr = this.fb.group({
   ngOnInit(): void {
   }
 
+  sendMessage() {
+    console.log('');
+  }
 }
