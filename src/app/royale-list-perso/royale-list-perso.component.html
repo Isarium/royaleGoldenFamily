@@ -1,8 +1,8 @@
 <body>
     <h1 class="text-white text-center">*Liste de la Royale Golden Family*</h1>
-    <div class="text-center" *ngFor="let personne of personnages">
-        <li class="text-white">{{personne.firstname}}</li>
-        <li class="text-white">{{personne.lastname}}</li>
-        <li class="text-white">{{personne.body}}</li>
+    <div class="text-center border border-warning" *ngFor="let personne of personnages">
+        <p class="text-white mt-2">{{personne.firstname}}</p>
+        <p class="text-white">{{personne.lastname}}</p>
+        <p class="text-white mb-2">{{personne.body}}</p>
     </div>  
 </body>

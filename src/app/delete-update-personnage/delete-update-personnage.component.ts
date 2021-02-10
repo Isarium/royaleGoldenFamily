@@ -22,6 +22,7 @@ export class DeleteUpdatePersonnageComponent implements OnInit {
     });
   this.personnageNew = new Personnage();  
   }
+  
   deletePersonnage(id: number) {
     this.personnageService.deletePersonnages(id).subscribe(data => {
       document.location.reload();
