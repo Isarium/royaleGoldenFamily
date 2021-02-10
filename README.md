@@ -2,7 +2,7 @@
 
 Ce projet a été réalisé dans le cadre du checkpoint 4, à la Wild Code School. Il fallait créer un backend (avec une méthode CRUD) et un front-end
 et les relier. Le sujet était libre, voir la quête https://odyssey.wildcodeschool.com/quests/655.
-Le but est de pouvoir affiché la liste des participants de la fomation. Et avec la méthode CRUD, d'ajouter ou de supprimer des apprenants.
+Le but est de pouvoir afficher la liste des participants de la fomation. Et avec la méthode CRUD, d'ajouter ou de supprimer des apprenants.
 
 ## Commencer le projet
 
