@@ -1,1 +1,8 @@
-<p>royale-list-perso works!</p>
+<body>
+    <h1 class="text-white text-center">*Liste de la Royale Golden Family*</h1>
+    <div class="text-center" *ngFor="let personne of personnages">
+        <li class="text-white">{{personne.firstname}}</li>
+        <li class="text-white">{{personne.lastname}}</li>
+        <li class="text-white">{{personne.body}}</li>
+    </div>  
+</body>

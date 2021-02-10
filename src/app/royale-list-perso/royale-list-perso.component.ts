@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Personnage } from '../models/personnage';
+import { PersonnagesService } from '../services/personnages.service';
 
 @Component({
   selector: 'app-royale-list-perso',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoyaleListPersoComponent implements OnInit {
 
-  constructor() { }
+  personnages: Array<Personnage> = [];
+
+  constructor(private personnageService: PersonnagesService) { }
 
   ngOnInit(): void {
+    this.personnageService.getAllPersonnages().subscribe(data => {
+      this.personnages = data;
+      console.log(this.personnages);
+    });
+    
   }
 
 }

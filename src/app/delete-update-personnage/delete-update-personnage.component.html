@@ -1,1 +1,23 @@
-<p>delete-update-personnage works!</p>
+<body class="bg-dark">
+
+    <div class="text-center" *ngFor="let personne of personnages">
+        <p class="text-white">{{personne.firstname}}</p>
+        <p class="text-white">{{personne.lastname}}</p>
+        <p class="text-white">{{personne.body}}</p>
+        <button class="btn btn-outline-danger" (click)="deletePersonnage(personne.id)" >Supprimer</button>
+    </div>  
+
+    <form (ngSubmit)="addPersonnage()">
+        <input type="text" [(ngModel)]="personnageNew.firstname" name="firstname">
+        <input type="text" [(ngModel)]="personnageNew.lastname" name="lastname">
+        <input type="text" [(ngModel)]="personnageNew.body" name="body">
+        <button class="btn btn-outline-primary " type="submit">Ajouter</button>
+    </form>
+
+    <div class="text-center mb-5">
+      
+        
+    </div>
+    
+</body>
+

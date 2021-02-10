@@ -5,6 +5,7 @@ public class PersonnageDto {
 	private String firstname;
 	private String lastname;
 	private String body;
+	
 	public String getFirstname() {
 		return firstname;
 	}
