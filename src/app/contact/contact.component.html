@@ -1,4 +1,26 @@
 <body>
-  
+<form class="d-flex flex-lg-row flex-wrap" [formGroup]="contactForm" (ngSubmit)="sendMessage()">
+    <div class="col-lg-6 d-flex flex-column">
+      <label></label>
+      <input type="text" formControlName="firstname" placeholder="Prénom">
+    </div>
+    <div class="col-lg-6 d-flex flex-column">
+      <label></label>
+      <input type="text" formControlName="lastName" placeholder="Nom">
+    </div>
+    <div class="col-lg-6 d-flex flex-column">
+      <label></label>
+      <input type="email" formControlName="eMail" placeholder="MAil">
+    </div>
+    <div class="col-lg-6 d-flex flex-column">
+      <label></label>
+      <input type="text" formControlName="sujet" placeholder="Sujet">
+    </div>
+    <div class="col-lg-6 d-flex flex-column">
+      <label></label>
+      <textarea type="text" formControlName="message" rows="8" placeholder="Ecrivez votre message"></textarea>
+    </div>
+    <button class="btn-primary col-lg-12 mt-3 mb-3" type="submit" [disabled]="!contactForm.valid">Envoyer votre message</button>
+  </form>
 </body>
 

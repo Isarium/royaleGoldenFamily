@@ -7,17 +7,11 @@
         <button class="btn btn-outline-danger" (click)="deletePersonnage(personne.id)" >Supprimer</button>
     </div>  
 
-    <form (ngSubmit)="addPersonnage()">
+    <form  class=""(ngSubmit)="addPersonnage()">
         <input type="text" [(ngModel)]="personnageNew.firstname" name="firstname">
         <input type="text" [(ngModel)]="personnageNew.lastname" name="lastname">
         <input type="text" [(ngModel)]="personnageNew.body" name="body">
         <button class="btn btn-outline-primary " type="submit">Ajouter</button>
-    </form>
-
-    <div class="text-center mb-5">
-      
-        
-    </div>
-    
+    </form>    
 </body>
 
