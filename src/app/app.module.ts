@@ -12,6 +12,8 @@ import { ListPersoComponent } from './list-perso/list-perso.component';
 import { RoyaleListPersoComponent } from './royale-list-perso/royale-list-perso.component';
 import { AddPersonnageComponent } from './add-personnage/add-personnage.component';
 import { DeleteUpdatePersonnageComponent } from './delete-update-personnage/delete-update-personnage.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -25,12 +27,16 @@ import { DeleteUpdatePersonnageComponent } from './delete-update-personnage/dele
     ListPersoComponent,
     RoyaleListPersoComponent,
     AddPersonnageComponent,
-    DeleteUpdatePersonnageComponent,
+    DeleteUpdatePersonnageComponent
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
