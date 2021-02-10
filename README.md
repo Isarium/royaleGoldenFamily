@@ -2,6 +2,7 @@
 
 Ce projet a été réalisé dans le cadre du checkpoint 4, à la Wild Code School. Il fallait créer un backend (avec une méthode CRUD) et un front-end
 et les relier. Le sujet était libre, voir la quête https://odyssey.wildcodeschool.com/quests/655.
+Le but est de pouvoir affiché la liste des participants de la fomation. Et avec la méthode CRUD, d'ajouter ou de supprimer des apprenants.
 
 ## Commencer le projet
 
@@ -28,7 +29,8 @@ Back-end
 Vous copiez le lien du repo github et vous le collez dans votre terminal de lignes de commandes.
 Le projet sera installé.
 Ensuite vous l'ouvrez avec votre IDE.
-Vous utilisez la commande suivant pour lancer le projet : ng serve -o
+Faites un npm install dans le terminal de commande.
+Puis vous utilisez la commande suivant pour lancer le projet : ng serve -o
 Cela ouvrira une nouvelle fenêtre/onglet sur le http://localhost:4200
 
 
